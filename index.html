@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ah js</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){ /*code here*/ 
+		$('body').html('<audio id="ahAudio" src="ah.mp3" preload="auto"></audio>');
+		var audio = document.getElementById("ahAudio");
+		var lastScrollTop = 0;
+		$(window).scroll(function(event){
+		   var st = $(this).scrollTop();
+		   if (st > lastScrollTop){
+		       audio.play();
+		   } else {
+		   		audio.play();
+		   }
+		   lastScrollTop = st;
+		});
+	});
+
+	</script>
+	
+</head>
+<body style="height: 1000px">
+
+
+</body>
+</html>
